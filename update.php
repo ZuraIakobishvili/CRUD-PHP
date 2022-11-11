@@ -14,9 +14,6 @@ $statement->bindValue(':id', $id);
 $statement->execute();
 $product = $statement->fetch(PDO::FETCH_ASSOC);
 
-echo '<pre>';
-var_dump($product);
-echo '</pre>';
 
 ?>
 
@@ -25,9 +22,6 @@ echo '</pre>';
 $pdo = new PDO('mysql:host=localhost;dbname=products_crud','root', '');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-echo randomString(8).'<br>';
-echo randomString(8).'<br>';
-echo randomString(8).'<br>';
 
 
 
